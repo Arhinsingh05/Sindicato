@@ -1,0 +1,3 @@
+# Sindicato
+SindTuc
+Este es mi archivo donde explico todo acerca de mi proyecto...
