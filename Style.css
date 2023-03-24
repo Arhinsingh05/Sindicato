@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(225, 225, 248);
+    color: rgb(244, 242, 248);
+    
+}
+.navbar{
+margin-top: 0px;
+background-color: blue;
+height: 80px;
+padding: 10px 18px;
+position: relative;
+}
+
+.checkbox, .icons{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.icons{
+    pointer-events: none;
+    font-size: 35px;
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.fi-rr-cross{
+    display:none;
+}
+
+.checkbox:checked ~ .fi-rr-menu-burger{
+    display: none;
+}
+
+.checkbox:checked ~ .fi-rr-cross{
+    display: block;
+}
+
+
+.menu{
+    width: 200px;
+    position: absolute;
+    display: none;
+    top:80px;
+    right: 0px;
+    transition: 250ms;
+}
+
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color:inherit;
+    background-color: rgba(90, 143, 250, 0.598);
+    display: block;
+    padding: 10px 12px;
+}
+
+.menu li a:hover{
+background-color: rgb(43, 6, 118);
+}
+
+
+.menu .active{
+    background-color: rgb(3, 3, 102);
+    color: rgb(239, 235, 243);
+}
+
+
+.checkbox:checked ~ .menu{
+    display: block;
+    top: 48px;
+}
+
+
+@media (min-width: 560px){
+.checkbox, .fi-rr-menu-burger, .fi-rr-cross{
+    display: none;
+}
+.menu{
+    width: unset;
+    height: 48px;
+    display: flex;
+}
+}
+
+
+.menu{
+    height: 48px;
+}
+
+
+h1{
+    font-family: gentiun book bassic;
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+h2{      
+    color: white;
+    text-align:center;
+    font-size: 35px;
+    background-color: blue; 
+}
+
+
+h3{
+    color: black;
+    text-align:center;
+    font-size: 35px;
+}
+
+
+div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;   
+}
+
+
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;   
+}
+
+input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.a{
+    font-size:45px ;
+}
+
+p{
+    color: black;
+    font-size: 30px;
+}
+
+button{
+    background-color: rgb(27, 27, 252);
+    color:aliceblue;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+
+footer{
+    background-color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
